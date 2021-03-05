@@ -1,0 +1,11 @@
+.post {
+  margin-bottom: 0px;
+  min-height: 200px;
+  max-height: 200px;
+  overflow: auto;
+}
+
+.footer {
+  bottom: 0;
+  width: 100%;
+}
