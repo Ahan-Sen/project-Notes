@@ -24,8 +24,8 @@ const Note = ({ note }) => {
   };
 
   return (
-    <div className="col-sm-4 col-10 mt-4 offset-1 offset-sm-0 mb-4 ">
-      <Card className="">
+    <div className="col-sm-4 col-10 mt-4 offset-1 offset-sm-0  ">
+      <Card className="m-card">
         <CardHeader className="pb-0 pr-0 ">
           <CardTitle tag="h5">{title} </CardTitle>
           <div className="container ">

@@ -2,6 +2,8 @@ import React, { useState, useContext, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { loginUser, clearError } from "../redux/auth/authActions";
+import Zoom from "react-reveal/Zoom";
+import Bounce from "react-reveal/Bounce";
 
 export const Login = (props) => {
   const dispatch = useDispatch();
@@ -31,7 +33,9 @@ export const Login = (props) => {
       <div className="container">
         <div className="row">
           <div className="col-md-6  mx-auto pt-4 pb-4 ">
-            <h3 className="login-heading mb-4">Welcome back!</h3>
+            <Bounce top>
+              <h3 className="login-heading mb-4">Welcome back!</h3>
+            </Bounce>
             <form onSubmit={submit}>
               <div className="form-group mb-1 mt-0">
                 <label className="mb-0 mt-1 text-secondary small" for="email">
