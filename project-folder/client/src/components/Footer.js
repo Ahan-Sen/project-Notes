@@ -3,11 +3,11 @@ import "./post.css";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer bg-dark">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-auto text">
-            <p>© Notes 2018 </p>
+            <p>© Notes 2021 </p>
           </div>
         </div>
       </div>

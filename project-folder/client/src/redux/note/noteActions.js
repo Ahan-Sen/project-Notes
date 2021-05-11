@@ -1,6 +1,4 @@
 import React, { useReducer } from "react";
-// import GuestContext from "./guestContext";
-// import guestReducer from "./guestReducer";
 import setToken from "../../utils/setToken";
 import axios from "axios";
 import {

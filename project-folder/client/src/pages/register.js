@@ -8,11 +8,6 @@ export const Register = (props) => {
   const dispatch = useDispatch();
   const users = useSelector((state) => state.user);
 
-  useEffect(() => {
-    if (users.userAuth) {
-      props.history.push("/");
-    }
-  }, [users.userAuth, props.history]);
   const [user, setUser] = useState({
     name: "",
     email: "",
@@ -25,6 +20,12 @@ export const Register = (props) => {
     setUser({ ...user, [e.target.name]: e.target.value });
     dispatch(clearError());
   };
+
+  useEffect(() => {
+    if (users.userAuth) {
+      props.history.push("/");
+    }
+  }, [users.userAuth]);
 
   const submit = (e) => {
     e.preventDefault();
